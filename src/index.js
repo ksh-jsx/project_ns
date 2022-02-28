@@ -1,17 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import 'react-app-polyfill/ie9'; // For IE 9-11 support
+import 'react-app-polyfill/ie11'; // For IE 9-11 support
+import 'react-app-polyfill/stable';
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Router } from "react-router-dom";
+import { createBrowserHistory } from "history";
+import App from "./App";
+//import './App.css';
 
+const history = createBrowserHistory();
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App
+      style={{
+        fontFamily: "NanumSquare !important"
+      }}
+    />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

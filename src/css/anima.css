@@ -1,0 +1,53 @@
+.article > div > *,.split-item{
+  opacity:0;
+  animation-duration: 2s;
+  animation-name: tmp;
+}
+
+@keyframes slide1 {
+  0% {
+      position: relative;
+      top:-50px;
+  }
+  
+  100% {
+      position: relative;
+      top:0px;
+  } 
+}
+
+@keyframes slide2 {
+  from {
+      position: relative;
+      bottom:-80px;
+  }
+  
+  to {
+      position: relative;
+      top:0px;
+  } 
+}
+
+@keyframes slide3 {
+  from {
+      position: relative;
+      left:-50px;
+  }
+  
+  to {
+      position: relative;
+      left:0px;
+  } 
+}
+
+@keyframes slide4 {
+  from {
+      position: relative;
+      left:50px;
+  }
+  
+  to {
+      position: relative;
+      left:0px;
+  } 
+}

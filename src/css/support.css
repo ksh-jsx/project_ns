@@ -1,0 +1,322 @@
+.maintenance_container,
+.contact_container {
+  margin: 0 auto;
+  margin-top: 80px;
+  max-width: 1280px;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 150px;
+}
+
+.maintenance_container .article_top > div {
+  margin-top: 20px;
+  font-size: 19px;
+  color: #999999;
+  text-align: center;
+}
+
+.maintenance_container .article_top > div:first-child {
+  font-weight: 500;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 30px;
+}
+.maintenance_container .article_top > div:first-child > span {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #bdbdbd;
+  color: #000000;
+  font-weight: bold;
+}
+
+.maintenance_container .article_mid {
+  font-size: 20px;
+  text-align: center;
+  line-height: 165%;
+  color: #000000;
+}
+
+.maintenance_container .article_mid > img {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 80%;
+  min-width: 200px;
+  max-width: 1000px;
+}
+
+.maintenance_container .article_mid ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  max-width: 570px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.maintenance_container #partnership {
+  padding-top: 50px;
+}
+
+.maintenance_container .article_mid li {
+  padding: 5px 0px 5px 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #efefef;
+  font-size: 20px;
+  text-align: left;
+}
+
+.maintenance_container .article_mid li:before {
+  content: ">";
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px 5px 6px 0px;
+  color: #6bbf24;
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.maintenance_container .article_mid2 {
+  display: flex;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.maintenance_container .paper {
+  margin: 1%;
+  margin-bottom: 30px;
+  width: 23%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.maintenance_container .paper > div {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.maintenance_container .paper > div ul {
+  padding: 0px !important;
+}
+
+.maintenance_container .paper > div li {
+  text-align: left;
+  list-style: none;
+}
+
+.maintenance_container .paper > div li:before {
+  content: ">";
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px 5px 6px 0px;
+  color: #6bbf24;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.maintenance_container .paper > div:last-child {
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.maintenance_container .engineer_container,
+.maintenance_container .engineer_container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.maintenance_container .paper_engineer_slim {
+  margin: 1%;
+  margin-bottom: 30px;
+  width: 14%;
+  min-width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.maintenance_container .paper_engineer_slim > img {
+  width: 20%;
+  margin-top: 10px;
+}
+
+.maintenance_container .paper_engineer_slim > div {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.maintenance_container .paper_engineer_slim > div:last-child {
+  font-size: 18px;
+  font-weight: normal;
+  word-break: keep-all;
+  padding: 0px 5px;
+  width: 100%;
+}
+
+.maintenance_container .paper_engineer {
+  margin: 1%;
+  margin-bottom: 30px;
+  width: 31%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.maintenance_container .paper_engineer > div {
+  text-align: left;
+  padding: 25px 40px 0px;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.maintenance_container .paper_engineer > *:first-child + div {
+  height: 55px;
+}
+
+.maintenance_container .paper_engineer > div:last-child {
+  font-size: 17px;
+  font-weight: normal;
+  word-break: keep-all;
+  width: 100%;
+}
+
+#img_hs {
+  width: 50%;
+}
+
+#maintenance1,
+#maintenance2 {
+  width: 50%;
+}
+.maintenance_container .article_contact {
+  width: 100%;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  height: 400px;
+  border-radius: 30px 0 30px 0;
+  margin-top: 200px;
+}
+.maintenance_container .article_contact .left {
+  width: 30%;
+  float: left;
+}
+.maintenance_container .article_contact .left img {
+  position: relative;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+}
+.maintenance_container .article_contact .right {
+  width: 65%;
+  float: right;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+.maintenance_container .article_contact .right tr {
+  height: 100px;
+}
+.maintenance_container .article_contact .right thead td {
+  font-weight: bold;
+  font-size: 30px;
+}
+.maintenance_container .article_contact .right tbody tr:last-child {
+  border: 0;
+}
+.maintenance_container form {
+  width: 100%;
+  height: 450px;
+  border: 1px;
+}
+.maintenance_container form fieldset {
+  width: 95%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.maintenance_container form > div {
+  width: 105px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.maintenance_container form fieldset > div {
+  width: 100%;
+}
+.maintenance_container form fieldset > div > label {
+  padding: 10px;
+}
+.maintenance_container form fieldset input {
+  padding-left: 25px;
+  padding-top: 30px;
+}
+.maintenance_container form fieldset textarea {
+  padding-left: 25px;
+  padding-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .maintenance_container {
+    width: 100%;
+  }
+  .maintenance_container .paper,
+  .maintenance_container .paper_engineer {
+    margin: 1%;
+    margin-bottom: 30px;
+    width: 88%;
+  }
+
+  .maintenance_container .article_mid li {
+    font-size: 15px;
+  }
+  .maintenance_container .article_top > div {
+    font-size: 17px;
+  }
+  .maintenance_container .article_top > div:first-child {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .maintenance_container .article_mid > img {
+    width: 100%;
+  }
+  #maintenance1 {
+    width: 80%;
+  }
+  #maintenance2 {
+    width: 100%;
+  }
+  .maintenance_container .article_contact {
+    height: 600px;
+  }
+  .maintenance_container .article_contact .left {
+    width: 100%;
+  }
+  .maintenance_container .article_contact .left img {
+    top: 10px;
+  }
+  .maintenance_container .article_contact .right {
+    width: 100%;
+  }
+  .maintenance_container .article_contact .right thead td {
+    font-size: 20px;
+  }
+  table {
+    font-size: 10px !important;
+  }
+  .maintenance_container .paper > div:last-child {
+    font-size: 15px;
+  }
+}
