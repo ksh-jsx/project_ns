@@ -1,7 +1,5 @@
-
 /*@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);*/
 @font-face {font-family: 'noto_sans';src: url('./css/Noto_Sans_KR/NotoSansKR-Medium.otf');}
-
 #admin_container *{
     font-family: 'noto_sans',serif !important;
     

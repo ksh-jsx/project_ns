@@ -10,7 +10,7 @@ const Logo = ({ className, ...props }) => {
       <h1 className="m-0">
         <Link to="/">
           <img
-            src={require("../../../img/logo.png")}
+            src={require("../../img/logo.png")}
             alt="Open"
             style={{
               width: 150 + "px",

@@ -36,17 +36,17 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
           </div>
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
             <div className="footer-copyright">
-              엔에스웍스(주)
+              김성현(주)
               <br />
-              주소 : (30127) 세종특별시 한누리대로 249, 609호
+              주소 : *********
               <br />
-              대표전화 : 070-4232-2240
+              대표전화 : *********
               <br />
-              개인정보책임자 | contact@nsworks.co.kr
+              개인정보책임자 | *********.co.kr
               <br />
               [개인정보처리방침]
               <br />
-              Copyright © NSworks. All rights reserved.
+              Copyright © *********
             </div>
           </div>
         </div>

@@ -5,14 +5,19 @@ import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import React from "react";
 import ReactDOM from "react-dom";
-import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import App from "./App";
-//import './App.css';
+import { createTheme } from "@material-ui/core/styles";
+import './index.css';
 
 const history = createBrowserHistory();
+const theme = createTheme({
+  typography: {
+    fontFamily: '"noto_sans", serif'
+  }
+});
 ReactDOM.render(
-  <React.StrictMode>
+  <React.StrictMode history={history} theme={theme}>
     <App
       style={{
         fontFamily: "NanumSquare !important"
@@ -21,3 +26,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+

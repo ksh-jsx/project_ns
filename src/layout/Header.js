@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import InfoContext from "./../../InfoContext";
+import InfoContext from "./../InfoContext";
 import Drawer from "@material-ui/core/Drawer";
 import Hidden from "@material-ui/core/Hidden";
 import IconButton from "@material-ui/core/IconButton";
@@ -13,9 +13,9 @@ import MuiAccordionDetails from "@material-ui/core/AccordionDetails";
 import MenuIcon from "@material-ui/icons/Menu";
 import MuiTypography from "@material-ui/core/Typography";
 import { makeStyles, useTheme, withStyles } from "@material-ui/core/styles";
-import "../../css/header.css";
+import "../css/header.css";
 import PopUp from "./popUpView";
-import logo from "./../../img/logo.png";
+import logo from "./../img/logo.png";
 
 import $ from "jquery";
 window.$ = $;
@@ -170,6 +170,57 @@ function Header(props) {
       <div className="header" onMouseLeave={mouseOut} id="header0">
         <div className="subclasses_wrap">
           <div className="subclasses">
+            <div id="subclass6"></div>
+            <div id="subclass5">
+              <Link to="/remote" className="menu4">
+                원격지원
+              </Link>
+            </div>
+            <div id="subclass4">
+              <Link to="/mt/engineer" className="menu4">
+                엔지니어 현황
+              </Link>
+              <Link to="/mt/maintenance" className="menu4">
+                유지보수
+              </Link>
+              <Link to="/mt/question" className="menu4">
+                기술지원문의
+              </Link>
+              <Link to="/mt/reference" className="menu4">
+                자료실
+              </Link>
+              <Link to="/remote" className="menu4">
+                원격지원
+              </Link>
+            </div>
+            <div id="subclass3">
+              <Link to="/hw/server" className="menu3">
+                서버
+              </Link>
+              <Link to="/hw/storage" className="menu3">
+                스토리지
+              </Link>
+              <Link to="/hw/network" className="menu3">
+                네트워크
+              </Link>
+              <Link to="/hw/security" className="menu3">
+                보안
+              </Link>
+            </div>
+            <div id="subclass2">
+              <Link to="/vm/server" className="menu2">
+                서버 가상화
+              </Link>
+              <Link to="/vm/desktop" className="menu2">
+                데스크톱 가상화
+              </Link>
+              <Link to="/vm/storage" className="menu2">
+                스토리지 가상화
+              </Link>
+              <Link to="/vm/DR" className="menu2">
+                재해복구시스템
+              </Link>
+            </div>
             <div id="subclass1">
               <Link
                 to="/"
@@ -212,57 +263,6 @@ function Header(props) {
                 찾아오시는 길
               </Link>
             </div>
-            <div id="subclass2">
-              <Link to="/vm/server" className="menu2">
-                서버 가상화
-              </Link>
-              <Link to="/vm/desktop" className="menu2">
-                데스크톱 가상화
-              </Link>
-              <Link to="/vm/storage" className="menu2">
-                스토리지 가상화
-              </Link>
-              <Link to="/vm/DR" className="menu2">
-                재해복구시스템
-              </Link>
-            </div>
-            <div id="subclass3">
-              <Link to="/hw/server" className="menu3">
-                서버
-              </Link>
-              <Link to="/hw/storage" className="menu3">
-                스토리지
-              </Link>
-              <Link to="/hw/network" className="menu3">
-                네트워크
-              </Link>
-              <Link to="/hw/security" className="menu3">
-                보안
-              </Link>
-            </div>
-            <div id="subclass4">
-              <Link to="/mt/engineer" className="menu4">
-                엔지니어 현황
-              </Link>
-              <Link to="/mt/maintenance" className="menu4">
-                유지보수
-              </Link>
-              <Link to="/mt/question" className="menu4">
-                기술지원문의
-              </Link>
-              <Link to="/mt/reference" className="menu4">
-                자료실
-              </Link>
-              <Link to="/remote" className="menu4">
-                원격지원
-              </Link>
-            </div>
-            <div id="subclass5">
-              <Link to="/remote" className="menu4">
-                원격지원
-              </Link>
-            </div>
-            <div id="subclass6"></div>
           </div>
         </div>
         <div className="tool">
@@ -287,24 +287,9 @@ function Header(props) {
           </div>
 
           <div className="menus"onMouseEnter={mouseOver}>
-            <div id="menu1" >
-              <Link to="/" className="menu1" onClick={onClickInfo("header0")}>
-                회사소개
-              </Link>
-            </div>
-            <div id="menu2" >
-              <Link to="/vm/server" className="menu2">
-                가상화인프라
-              </Link>
-            </div>
-            <div id="menu3" >
-              <Link to="/hw/server" className="menu3">
-                하드웨어인프라
-              </Link>
-            </div>
-            <div id="menu4" >
-              <Link to="/mt/engineer" className="menu4">
-                기술지원
+          <div id="menu6" >
+              <Link to="/admin/login" className="menu6">
+                직원전용
               </Link>
             </div>
             <div id="menu5" >
@@ -312,9 +297,24 @@ function Header(props) {
                 원격지원
               </Link>
             </div>
-            <div id="menu6" >
-              <Link to="/admin/login" className="menu6">
-                직원전용
+            <div id="menu4" >
+              <Link to="/mt/engineer" className="menu4">
+                기술지원
+              </Link>
+            </div>
+            <div id="menu3" >
+              <Link to="/hw/server" className="menu3">
+                하드웨어인프라
+              </Link>
+            </div>
+            <div id="menu2" >
+              <Link to="/vm/server" className="menu2">
+                가상화인프라
+              </Link>
+            </div>
+            <div id="menu1" >
+              <Link to="/" className="menu1" onClick={onClickInfo("header0")}>
+                회사소개
               </Link>
             </div>
           </div>
