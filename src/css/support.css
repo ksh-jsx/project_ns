@@ -3,7 +3,7 @@
   margin: 0 auto;
   margin-top: 80px;
   max-width: 1280px;
-  width: 100%;
+  width: calc(100% - 48px);
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 150px;
@@ -269,9 +269,7 @@
 }
 
 @media (max-width: 600px) {
-  .maintenance_container {
-    width: 100%;
-  }
+
   .maintenance_container .paper,
   .maintenance_container .paper_engineer {
     margin: 1%;

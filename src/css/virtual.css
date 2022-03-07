@@ -2,7 +2,7 @@
   margin: 0 auto;
   margin-top: 30px;
   max-width: 1280px;
-  width: 100%;
+  width: calc(100% - 48px);
   padding-left: 24px;
   padding-right: 24px;
   overflow: hidden;
@@ -139,9 +139,7 @@
 }
 
 @media (max-width: 960px) {
-  .virtual_container {
-    width: 100%;
-  }
+
   .virtual_container .article_top .highlight {
     font-size: 17px;
   }

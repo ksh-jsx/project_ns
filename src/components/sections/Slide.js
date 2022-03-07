@@ -42,6 +42,7 @@ const Image = styled.img`
   right: 0;
   bottom: 0;
   height: auto;
+  width:100%;
   transition: ${(props) => {
     return props.current ? "all linear 25s" : "all linear 0s 5s";
   }};
@@ -51,7 +52,7 @@ const Image = styled.img`
   @media (max-width: 960px) {
     height: 100%;
     object-fit: cover;
-    object-position: ${(props) => props.pos};
+    object-position: 50% 50%;
   }
 `;
 

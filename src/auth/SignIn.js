@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import logo from "../img/logo.png";
+import { dbService, storageService } from "../firebase";
 
 const useStyles = theme => ({
   paper: {
@@ -56,16 +57,32 @@ class SignIn extends React.Component {
     this.Login = this.Login.bind(this)
   }
   componentDidMount(){
+    
+    //this.callData()
+    
     this.timer = setInterval(this.progress, 20);
     
     this.callSession()
         .then(res => this.setState({session_id: res.user_id.replace('admin','')}))
         .catch(err => console.log(err));
   }
+
   callSession = async() => {
     const response = await fetch('/api/get_session');        
     const body = await response.json();
     return body;
+  }
+
+  callData = async() => {
+    await dbService.collection("lists").onSnapshot((snapshot) => {
+      const fbArray = snapshot.docs.map((doc) => ({
+        id: 1,
+        page:2,
+        ...doc.data(),
+      }));
+      return fbArray
+    });
+    
   }
 
   handleFormSubmit(e) {
@@ -121,13 +138,12 @@ class SignIn extends React.Component {
     const { classes } = this.props;
     return (
       <Container component="main" maxWidth="xs" id="admin_container">
-		
-		<Link
-              to="/"
-              className={classes.txt_deco_none2}
-            >
-              <img src={logo} alt="logo" className={classes.logo}/>
-            </Link>
+        <Link
+          to="/"
+          className={classes.txt_deco_none2}
+        >
+          <img src={logo} alt="logo" className={classes.logo}/>
+        </Link>
         <div className={classes.none}>{this.state.session_id ? window.location.href = '/admin' : <div></div>}</div>
         <CssBaseline />
         <div className={classes.paper}>

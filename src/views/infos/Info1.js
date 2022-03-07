@@ -67,8 +67,8 @@ export default function Info1() {
 
   return (
     <div>
-	  	        <Header />
-	        <Slider/>
+        <Header />
+        <Slider/>
       <div className="info_container" id="info_container1">
         <div className="article" id="article1">
           <div className="article_top">

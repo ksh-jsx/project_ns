@@ -192,51 +192,49 @@ class Admins extends React.Component {
               <Navigation current_link="/" session_id ={this.state.session_id} />
               <div className={classes.menu}>
                 <div className={classes.search}>
-                    <div className={classes.searchIcon}>
-                    <SearchIcon />
-                    </div>
-                    <InputBase
-                    placeholder="이름으로 검색"
-                    classes={{
-                        root: classes.inputRoot,
-                        input: classes.inputInput,
-                    }}
-                    autoComplete="off"
-                    name="searchKeyword"
-                    value={this.state.searchKeyword}
-                    onChange={this.handleValueChange}
-                    />
+                  <div className={classes.searchIcon}>
+                  <SearchIcon />
+                  </div>
+                  <InputBase
+                  placeholder="이름으로 검색"
+                  classes={{
+                      root: classes.inputRoot,
+                      input: classes.inputInput,
+                  }}
+                  autoComplete="off"
+                  name="searchKeyword"
+                  value={this.state.searchKeyword}
+                  onChange={this.handleValueChange}
+                  />
                 </div>
-
-				{(this.state.session_id*1 === this.props.id || this.state.session_id*1 === 1 || this.state.session_id*1 === -1 || this.state.session_id*1 === 2) ?
+				        {(this.state.session_id*1 === this.props.id || this.state.session_id*1 === 1 || this.state.session_id*1 === -1 || this.state.session_id*1 === 2) ?
                   (<AdminAdd stateRefresh={this.stateRefresh} name={nameList}/>)
                   :
                   (<div></div>)
                 }
-                
               </div>
-                <Paper className={classes.paper}>
-                    <Table>
-                        <TableHead>
-                        <TableRow>
-                            {cellList.map((c,i) => {
-                            return <TableCell className={classes.tableHead} key={i}>{c}</TableCell>
-                            })}
-                        </TableRow>
-                        </TableHead>
-                        <TableBody>
+              <Paper className={classes.paper}>
+                <Table>
+                  <TableHead>
+                  <TableRow>
+                    {cellList.map((c,i) => {
+                      return <TableCell className={classes.tableHead} key={i}>{c}</TableCell>
+                    })}
+                  </TableRow>
+                  </TableHead>
+                  <TableBody>
 
-                        {this.state.admin && this.state.session_id  ? 
-                            filteredComponents(this.state.admin) :
-                            <TableRow>
-                            <TableCell colSpan="6" align="center">
-                                <CircularProgress className={classes.progress} variant="determinate" value={this.state.completed} />
-                            </TableCell>
-                            </TableRow>
-                        }
-                        </TableBody>
-                    </Table>
-                </Paper>
+                  {this.state.admin && this.state.session_id  ? 
+                    filteredComponents(this.state.admin) :
+                    <TableRow>
+                    <TableCell colSpan="6" align="center">
+                      <CircularProgress className={classes.progress} variant="determinate" value={this.state.completed} />
+                    </TableCell>
+                    </TableRow>
+                  }
+                  </TableBody>
+                </Table>
+              </Paper>
             </div>
         
         )

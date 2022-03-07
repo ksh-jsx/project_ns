@@ -213,7 +213,6 @@ export default function Slider() {
               href: "/mt/question"
             }}
             img="2"
-            pos="80% 50%"
             current={currentSlide === 4}
             aniStart={aniStart}
           />
