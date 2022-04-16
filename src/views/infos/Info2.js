@@ -170,7 +170,7 @@ export default function Info2() {
       ) : (
         <div />
       )} */}
-      <div className="info_container" id="info_container2" style={{maxHeight:1750}}>
+      <div className="info_container" id="info_container2" >
         <div className="article" id="article2">
           <div className="article_top">
             <div>
