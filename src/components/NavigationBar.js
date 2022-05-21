@@ -118,16 +118,16 @@ function NavigationBar(props) {
 		  <div className={classes.toolbar} />
 		  <Divider />
 			<List>
-			  <Link to="/" className={classes.txt_deco_none}>
-				<ListItem button key='직원 관리' className={props.current_link === '/' ? classes.clicked_item : classes.unclicked_item }>
+			  <Link to="/admin" className={classes.txt_deco_none}>
+				<ListItem button key='직원 관리' className={props.current_link === '/admin' ? classes.clicked_item : classes.unclicked_item }>
 				  <ListItemIcon>
 					  <PeopleIcon />
 					</ListItemIcon>
 				  <ListItemText primary='직원 관리' />
 				</ListItem>
 			  </Link>
-			  <Link to="/customer" className={classes.txt_deco_none}>
-				<ListItem button key='고객사 관리' className={props.current_link === '/customer' ? classes.clicked_item : classes.unclicked_item }>
+			  <Link to="/admin/customer" className={classes.txt_deco_none}>
+				<ListItem button key='고객사 관리' className={props.current_link === '/admin/customer' ? classes.clicked_item : classes.unclicked_item }>
 				  <ListItemIcon>
 					  <BusinessIcon />
 					</ListItemIcon>
@@ -218,8 +218,8 @@ function NavigationBar(props) {
 		  <div className={classes.toolbar} />
 		  <Divider />
 			<List>
-			  <Link to="/" className={classes.txt_deco_none}>
-				<ListItem button key='직원 관리' className={props.current_link === '/' ? classes.clicked_item : classes.unclicked_item }>
+			  <Link to="/admin" className={classes.txt_deco_none}>
+				<ListItem button key='직원 관리' className={props.current_link === '/admin' ? classes.clicked_item : classes.unclicked_item }>
 				  <ListItemIcon>
 					  <PeopleIcon />
 					</ListItemIcon>
@@ -295,7 +295,7 @@ function NavigationBar(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
         >
-          {props.session_id*1 === 1 || props.session_id*1 === -1 || props.session_id*1 === 2 ? drawer : drawer2}
+          {props.session_id*1 === 1 || props.session_id*1 === -1 || props.session_id*1 === 2 ? drawer2 : drawer}
         </Drawer>
       </Hidden>
       <Hidden xsDown implementation="css">
@@ -306,7 +306,7 @@ function NavigationBar(props) {
           variant="permanent"
           open
         >
-          {props.session_id*1 === 1 || props.session_id*1 === -1 || props.session_id*1 === 2 ? drawer : drawer2}
+          {props.session_id*1 === 1 || props.session_id*1 === -1 || props.session_id*1 === 2 ? drawer2 : drawer}
         </Drawer>
       </Hidden>
     </nav>

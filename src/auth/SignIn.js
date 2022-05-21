@@ -192,7 +192,7 @@ class SignIn extends React.Component {
             </Button>
           </form>
         </div>
-        
+        <Link to="/admin">메인뷰</Link>
       </Container>
     );
   }

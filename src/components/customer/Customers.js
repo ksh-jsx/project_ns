@@ -185,7 +185,7 @@ class Managers extends React.Component {
         }
         return (
             <div id="admin_container">
-              <Navigation current_link="/customer" session_id ={this.state.session_id} />
+              <Navigation current_link="/admin/customer" session_id ={this.state.session_id} />
               <div className={classes.menu}>
                 <div className={classes.search}>
                     <div className={classes.searchIcon}>
