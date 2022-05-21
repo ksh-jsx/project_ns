@@ -134,56 +134,56 @@ function NavigationBar(props) {
 				  <ListItemText primary='고객사 관리' />
 				</ListItem>
 			  </Link>
-			  <Link to="/manager" className={classes.txt_deco_none}>
-				<ListItem button key='담당자 관리' className={props.current_link === '/manager' ? classes.clicked_item : classes.unclicked_item }>
+			  <Link to="/admin/manager" className={classes.txt_deco_none}>
+				<ListItem button key='담당자 관리' className={props.current_link === '/admin/manager' ? classes.clicked_item : classes.unclicked_item }>
 				  <ListItemIcon>
 					  <AssignmentIndIcon />
 					</ListItemIcon>
 				  <ListItemText primary='담당자 관리' />
 				</ListItem>
 			  </Link>
-			  <Link to="/popUp" className={classes.txt_deco_none}>
-				<ListItem button key='팝업창 관리' className={props.current_link === '/popUp' ? classes.clicked_item : classes.unclicked_item }>
+			  <Link to="/admin/popUp" className={classes.txt_deco_none}>
+				<ListItem button key='팝업창 관리' className={props.current_link === '/admin/popUp' ? classes.clicked_item : classes.unclicked_item }>
 				  <ListItemIcon>
 					  <AssignmentIcon />
 					</ListItemIcon>
 				  <ListItemText primary='팝업창 관리' />
 				</ListItem>
 			  </Link>
-			  <Link to="/board" className={classes.txt_deco_none}>
-				<ListItem button key='게시판 관리' className={props.current_link === '/board' ? classes.clicked_item : classes.unclicked_item }>
+			  <Link to="/admin/board" className={classes.txt_deco_none}>
+				<ListItem button key='게시판 관리' className={props.current_link === '/admin/board' ? classes.clicked_item : classes.unclicked_item }>
 				  <ListItemIcon>
 					  <CreateIcon />
 					</ListItemIcon>
 				  <ListItemText primary='게시판 관리' />
 				</ListItem>
 			  </Link>
-			  <Link to="/survey" className={classes.txt_deco_none}>
-				<ListItem button key='설문 관리' className={props.current_link === '/survey' ? classes.clicked_item : classes.unclicked_item }>
+			  <Link to="/admin/survey" className={classes.txt_deco_none}>
+				<ListItem button key='설문 관리' className={props.current_link === '/admin/survey' ? classes.clicked_item : classes.unclicked_item }>
 				  <ListItemIcon>
 					  <MessageIcon />
 					</ListItemIcon>
 				  <ListItemText primary='설문 관리' />
 				</ListItem>
 			  </Link>
-			  <Link to="/question" className={classes.txt_deco_none}>
-				<ListItem button key='문의 관리' className={props.current_link === '/question' ? classes.clicked_item : classes.unclicked_item }>
+			  <Link to="/admin/question" className={classes.txt_deco_none}>
+				<ListItem button key='문의 관리' className={props.current_link === '/admin/question' ? classes.clicked_item : classes.unclicked_item }>
 				  <ListItemIcon>
 					  <LiveHelpIcon />
 					</ListItemIcon>
 				  <ListItemText primary='문의 관리' />
 				</ListItem>
 			  </Link>
-        <Link to="/contract" className={classes.txt_deco_none}>
-				<ListItem button key='계약서 관리' className={props.current_link === '/contract' ? classes.clicked_item : classes.unclicked_item }>
+        <Link to="/admin/contract" className={classes.txt_deco_none}>
+				<ListItem button key='계약서 관리' className={props.current_link === '/admin/contract' ? classes.clicked_item : classes.unclicked_item }>
 				  <ListItemIcon>
 					  <InsertDriveFileIcon />
 					</ListItemIcon>
 				  <ListItemText primary='계약서 관리' />
 				</ListItem>
 			  </Link>
-        <Link to="/contract2" className={classes.txt_deco_none}>
-				<ListItem button key='완료 계약서 관리' className={props.current_link === '/contract2' ? classes.clicked_item : classes.unclicked_item }>
+        <Link to="/admin/contract2" className={classes.txt_deco_none}>
+				<ListItem button key='완료 계약서 관리' className={props.current_link === '/admin/contract2' ? classes.clicked_item : classes.unclicked_item }>
 				  <ListItemIcon>
 					  <InsertDriveFileIcon />
 					</ListItemIcon>
@@ -193,16 +193,16 @@ function NavigationBar(props) {
 			</List>
 		  <Divider />
 		  <List>
-			<Link to="/journal" className={classes.txt_deco_none}>
-			  <ListItem button key='업무일지 관리' className={props.current_link === '/journal' ? classes.clicked_item : classes.unclicked_item }>
+			<Link to="/admin/journal" className={classes.txt_deco_none}>
+			  <ListItem button key='업무일지 관리' className={props.current_link === '/admin/journal' ? classes.clicked_item : classes.unclicked_item }>
 				<ListItemIcon>
 					<LibraryBooksOutlinedIcon />
 				  </ListItemIcon>
 				<ListItemText primary='업무일지 관리' />
 			  </ListItem>
 			</Link>
-			<Link to="/attendance" className={classes.txt_deco_none}>
-			  <ListItem button key='출퇴근 관리' className={props.current_link === '/attendance' ? classes.clicked_item : classes.unclicked_item }>
+			<Link to="/admin/attendance" className={classes.txt_deco_none}>
+			  <ListItem button key='출퇴근 관리' className={props.current_link === '/admin/attendance' ? classes.clicked_item : classes.unclicked_item }>
 				<ListItemIcon>
 					<LocationOnOutlinedIcon />
 				  </ListItemIcon>
